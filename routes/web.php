@@ -13,13 +13,55 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Route::get('/debug-check-all', function () {
-    dd([
+Route::get('/debug-seed-all', function () {
+    $result = [];
+
+    // Admin (kalau belum ada)
+    if (!\App\Models\User::where('email', 'admin@siakad.com')->exists()) {
+        \App\Models\User::create([
+            'name' => 'Admin SIAKAD',
+            'email' => 'admin@siakad.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+            'role' => 'admin',
+        ]);
+        $result['admin'] = 'created';
+    } else {
+        $result['admin'] = 'already exists';
+    }
+
+    // Dosen
+    if (\App\Models\Dosen::count() === 0) {
+        \App\Models\Dosen::insert([
+            ['nidn' => '0101019001', 'nama' => 'Tarmin Abdulghani ST.,M.T', 'created_at' => now(), 'updated_at' => now()],
+            ['nidn' => '0202029002', 'nama' => 'Siti Nazilah ST.,M.Kom', 'created_at' => now(), 'updated_at' => now()],
+            ['nidn' => '0303039003', 'nama' => 'Siti Sarah ST.,M.Kom', 'created_at' => now(), 'updated_at' => now()],
+        ]);
+        $result['dosen'] = 'seeded';
+    } else {
+        $result['dosen'] = 'already has data';
+    }
+
+    // Mata Kuliah
+    if (\App\Models\MataKuliah::count() === 0) {
+        \App\Models\MataKuliah::insert([
+            ['kode_matakuliah' => 'IF001', 'nama_matakuliah' => 'Pemrograman Web', 'sks' => 3, 'created_at' => now(), 'updated_at' => now()],
+            ['kode_matakuliah' => 'IF002', 'nama_matakuliah' => 'Basis Data', 'sks' => 3, 'created_at' => now(), 'updated_at' => now()],
+            ['kode_matakuliah' => 'IF003', 'nama_matakuliah' => 'Jaringan Komputer', 'sks' => 2, 'created_at' => now(), 'updated_at' => now()],
+            ['kode_matakuliah' => 'IF004', 'nama_matakuliah' => 'Rekayasa Perangkat Lunak', 'sks' => 3, 'created_at' => now(), 'updated_at' => now()],
+        ]);
+        $result['matakuliah'] = 'seeded';
+    } else {
+        $result['matakuliah'] = 'already has data';
+    }
+
+    $result['final_count'] = [
         'dosen' => \App\Models\Dosen::count(),
         'matakuliah' => \App\Models\MataKuliah::count(),
         'mahasiswa' => \App\Models\Mahasiswa::count(),
         'users' => \App\Models\User::count(),
-    ]);
+    ];
+
+    dd($result);
 });
 
 // Route setelah login
