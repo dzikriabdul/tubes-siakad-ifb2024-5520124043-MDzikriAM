@@ -24,6 +24,7 @@ Aplikasi telah dioptimalkan agar dapat digunakan dengan nyaman pada berbagai uku
 ✔ Responsive Layout  
 ✔ Mobile Friendly  
 ✔ Tampilan Modern dan User Friendly
+
 ✔ Jadwal mata kuliah sesuai kelas masing masing
 
 ---
