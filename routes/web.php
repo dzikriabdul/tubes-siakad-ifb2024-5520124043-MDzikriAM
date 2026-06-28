@@ -13,9 +13,15 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Route::get('/debug-mahasiswa', function () {
-    $data = \App\Models\Mahasiswa::all(['npm', 'nama', 'kelas'])->toArray();
-    dd($data);
+Route::get('/debug-seed-mahasiswa', function () {
+    \App\Models\Mahasiswa::insert([
+        ['npm' => '2024010001', 'nama' => 'Muhammad Dzikri Abdul Muti', 'kelas' => 'A', 'created_at' => now(), 'updated_at' => now()],
+        ['npm' => '2024010002', 'nama' => 'Abdurahman', 'kelas' => 'B', 'created_at' => now(), 'updated_at' => now()],
+        ['npm' => '2024010003', 'nama' => 'RafiLadzuardi', 'kelas' => 'C', 'created_at' => now(), 'updated_at' => now()],
+    ]);
+
+    $check = \App\Models\Mahasiswa::all(['npm', 'nama', 'kelas'])->toArray();
+    dd($check);
 });
 
 // Route setelah login
