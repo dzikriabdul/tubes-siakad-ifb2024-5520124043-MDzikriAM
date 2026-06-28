@@ -15,7 +15,7 @@ Route::get('/', function () {
 
 //debuging
 Route::get('/debug-user-check', function () {
-    $users = \App\Models\User::where('email', 'dzikri@gmail.com')->get(['id', 'name', 'email', 'role', 'npm']);
+    $users = \App\Models\User::where('email', 'dzikri@gmail.com')->get(['id', 'name', 'email', 'role', 'npm'])->toArray();
     dd($users);
 });
 
