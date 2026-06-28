@@ -14,9 +14,15 @@ Route::get('/', function () {
 });
 
 //debuging
-Route::get('/debug-user-check', function () {
-    $users = \App\Models\User::where('email', 'dzikri@gmail.com')->get(['id', 'name', 'email', 'role', 'npm'])->toArray();
-    dd($users);
+Route::get('/debug-fix-npm', function () {
+    $u1 = \App\Models\User::where('email', 'dzikri@gmail.com')->update(['npm' => '2024010001']);
+    $u2 = \App\Models\User::where('email', 'abdurahman@gmail.com')->update(['npm' => '2024010002']);
+    $u3 = \App\Models\User::where('email', 'rafil@gmail.com')->update(['npm' => '2024010003']);
+
+    $check = \App\Models\User::whereIn('email', ['dzikri@gmail.com', 'abdurahman@gmail.com', 'rafil@gmail.com'])
+                ->get(['id', 'name', 'email', 'npm'])->toArray();
+
+    dd(['updated' => [$u1, $u2, $u3], 'result' => $check]);
 });
 
 // Route setelah login
