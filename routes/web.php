@@ -13,18 +13,9 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Route::get('/debug-routes', function () {
-    $routes = collect(\Illuminate\Support\Facades\Route::getRoutes())->map(function ($route) {
-        return [
-            'method' => implode('|', $route->methods()),
-            'uri' => $route->uri(),
-            'name' => $route->getName(),
-        ];
-    })->filter(function ($r) {
-        return str_contains($r['uri'], 'krs') || str_contains($r['uri'], 'jadwal');
-    })->values();
-
-    dd($routes->toArray());
+Route::get('/debug-mahasiswa', function () {
+    $data = \App\Models\Mahasiswa::all(['npm', 'nama', 'kelas'])->toArray();
+    dd($data);
 });
 
 // Route setelah login
