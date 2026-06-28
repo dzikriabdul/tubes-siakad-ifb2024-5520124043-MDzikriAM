@@ -13,6 +13,16 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
+//debug
+Route::get('/debug-clear-cache', function () {
+    \Illuminate\Support\Facades\Artisan::call('route:clear');
+    \Illuminate\Support\Facades\Artisan::call('config:clear');
+    \Illuminate\Support\Facades\Artisan::call('cache:clear');
+    \Illuminate\Support\Facades\Artisan::call('view:clear');
+
+    return 'Cache cleared successfully!';
+});
+
 // Route setelah login
 Route::middleware(['auth'])->group(function () {
 
