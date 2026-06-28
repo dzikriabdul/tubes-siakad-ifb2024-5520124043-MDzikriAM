@@ -24,6 +24,7 @@ Aplikasi telah dioptimalkan agar dapat digunakan dengan nyaman pada berbagai uku
 ✔ Responsive Layout  
 ✔ Mobile Friendly  
 ✔ Tampilan Modern dan User Friendly
+✔ Jadwal mata kuliah sesuai kelas masing masing
 
 ---
 
@@ -48,17 +49,18 @@ password
 ## Mahasiswa
 
 **Email**
-kelas A
+
+mhs kelas A
 ```
 dzikri@gmail.com
 ```
 
-Kelas B
+mhs Kelas B
 ```
 abdurahman@gmail.com
 ```
 
-Kelas C
+mhs Kelas C
 ```
 rafil@gmail.com
 ```
@@ -67,7 +69,7 @@ rafil@gmail.com
 ```
 password
 ```
-semua akun password nya sama
+
 ---
 
 # 📖 Tentang Aplikasi
