@@ -20,4 +20,9 @@ class Mahasiswa extends Model
     {
         return $this->belongsToMany(MataKuliah::class, 'krs', 'npm', 'kode_matakuliah');
     }
+
+    public function user()
+    {
+        return $this->hasOne(\App\Models\User::class, 'npm', 'npm');
+    }
 }

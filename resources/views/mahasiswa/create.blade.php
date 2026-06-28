@@ -16,6 +16,11 @@
         <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}" maxlength="50">
         @error('nama') <div class="invalid-feedback">{{ $message }}</div> @enderror
     </div>
+    <div class="mb-3">
+        <label class="form-label">Kelas</label>
+        <input type="text" name="kelas" class="form-control @error('kelas') is-invalid @enderror" value="{{ old('kelas') }}" maxlength="1" placeholder="A / B / C">
+        @error('kelas') <div class="invalid-feedback">{{ $message }}</div> @enderror
+    </div>
     <button type="submit" class="btn btn-primary">Simpan</button>
     <a href="{{ route('mahasiswa.index') }}" class="btn btn-secondary">Batal</a>
 </form>

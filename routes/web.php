@@ -31,13 +31,17 @@ Route::middleware(['auth'])->group(function () {
 
     // Route khusus Admin
     Route::middleware(['role:admin'])->group(function () {
-        Route::resource('dosen', DosenController::class);
-        Route::resource('mahasiswa', MahasiswaController::class);
-        Route::resource('matakuliah', MataKuliahController::class);
-        Route::resource('jadwal', JadwalController::class);
+    Route::resource('dosen', DosenController::class);
+    Route::resource('mahasiswa', MahasiswaController::class);
+    Route::resource('matakuliah', MataKuliahController::class);
+    Route::resource('jadwal', JadwalController::class);
 
-        // Admin lihat KRS semua mahasiswa
-        Route::get('krs', [KrsController::class, 'index'])->name('krs.index');
+    // Admin lihat KRS semua mahasiswa
+    Route::get('krs', [KrsController::class, 'index'])->name('krs.index');
+
+    // Assign/unassign akun user ke data mahasiswa
+    Route::post('mahasiswa/assign-user', [MahasiswaController::class, 'assignUser'])->name('mahasiswa.assign-user');
+    Route::post('mahasiswa/{npm}/unassign-user', [MahasiswaController::class, 'unassignUser'])->name('mahasiswa.unassign-user');
     });
 
 });
