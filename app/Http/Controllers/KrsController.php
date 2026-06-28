@@ -21,12 +21,6 @@ class KrsController extends Controller
     {
         $npm = auth()->user()->npm;
 
-    dd([
-        'user_id' => auth()->id(),
-        'email' => auth()->user()->email,
-        'npm' => $npm,
-        'npm_type' => gettype($npm),
-    ]);
         if (!$npm) {
             return redirect()->route('dashboard')->with('error', 'Akun kamu belum terhubung dengan data mahasiswa. Hubungi admin.');
         }
