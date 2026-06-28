@@ -48,15 +48,26 @@ password
 ## Mahasiswa
 
 **Email**
+kelas A
 ```
 dzikri@gmail.com
+```
+
+Kelas B
+```
+abdurahman@gmail.com
+```
+
+Kelas C
+```
+rafil@gmail.com
 ```
 
 **Password**
 ```
 password
 ```
-
+semua akun password nya sama
 ---
 
 # 📖 Tentang Aplikasi
