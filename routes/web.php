@@ -13,6 +13,12 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
+//debuging
+Route::get('/debug-user-check', function () {
+    $users = \App\Models\User::where('email', 'dzikri@gmail.com')->get(['id', 'name', 'email', 'role', 'npm']);
+    dd($users);
+});
+
 // Route setelah login
 Route::middleware(['auth'])->group(function () {
 
