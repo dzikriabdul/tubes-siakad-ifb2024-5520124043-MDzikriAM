@@ -1,59 +1,200 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 Tugas Besar Sistem Informasi Akademik (SIAKAD)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📌 Informasi Proyek
 
-## About Laravel
+**Nama Proyek** : Sistem Informasi Akademik (SIAKAD)  
+**Mata Kuliah** : Pemrograman Web Lanjut (PWL)  
+**Program Studi** : Teknik Informatika  
+**Semester** : Genap 2025/2026
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# 🌐 Link Aplikasi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Proyek ini telah berhasil di-deploy sehingga dapat diakses secara online melalui link berikut:
 
-## Learning Laravel
+🔗 **Website:** (https://tubes-siakad-ifb2024-5520124043-mdzikriam-production-ddc5.up.railway.app/)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# 📱 Responsive Design
 
-## Laravel Sponsors
+Aplikasi telah dioptimalkan agar dapat digunakan dengan nyaman pada berbagai ukuran layar, baik desktop, tablet, maupun smartphone.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+✔ Responsive Layout  
+✔ Mobile Friendly  
+✔ Tampilan Modern dan User Friendly
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# 🔑 Akun Demo
 
-## Contributing
+Untuk memudahkan pengujian aplikasi, silakan gunakan akun berikut.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Admin
 
-## Code of Conduct
+**Email**
+```
+admin@siakad.com
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**Password**
+```
+password
+```
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Mahasiswa
 
-## License
+**Email**
+```
+dzikri@gmail.com
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Password**
+```
+password
+```
+
+---
+
+# 📖 Tentang Aplikasi
+
+Sistem Informasi Akademik (SIAKAD) merupakan aplikasi berbasis web yang dikembangkan untuk membantu pengelolaan data akademik pada sebuah perguruan tinggi.
+
+Melalui aplikasi ini, admin dapat mengelola data dosen, mahasiswa, mata kuliah, jadwal kuliah, serta pengguna. Mahasiswa dapat melakukan pengisian Kartu Rencana Studi (KRS), melihat jadwal perkuliahan, serta mencetak KRS dalam bentuk PDF.
+
+Aplikasi dikembangkan menggunakan framework Laravel dengan konsep CRUD, autentikasi multi-role, dan database relasional sehingga proses administrasi akademik menjadi lebih cepat, mudah, dan efisien.
+
+---
+
+# ✨ Fitur Utama
+
+- Login Multi User
+- Dashboard
+- Manajemen Dosen
+- Manajemen Mahasiswa
+- Manajemen Mata Kuliah
+- Manajemen Jadwal Kuliah
+- Pengisian KRS
+- Perhitungan Total SKS
+- Cetak KRS PDF
+- Validasi Data
+- Responsive Design
+
+---
+
+# 📑 Penjelasan Menu
+
+## 🏠 Landing Page
+
+Halaman pertama yang ditampilkan ketika pengguna mengakses website. Berisi informasi singkat mengenai aplikasi serta tombol menuju halaman login.
+
+---
+
+## 📊 Dashboard
+
+Halaman utama setelah login yang menampilkan informasi ringkasan data akademik seperti jumlah dosen, mahasiswa, mata kuliah, dan jadwal.
+
+---
+
+## 👨‍🏫 Data Dosen
+
+Menu untuk mengelola data dosen.
+
+Fitur yang tersedia:
+
+- Melihat daftar dosen
+- Menambah data dosen
+- Mengubah data dosen
+- Menghapus data dosen
+
+---
+
+## 👨‍🎓 Data Mahasiswa
+
+Menu untuk mengelola data mahasiswa.
+
+Fitur:
+
+- Menampilkan daftar mahasiswa
+- Menambah mahasiswa
+- Mengedit data mahasiswa
+- Menghapus data mahasiswa
+
+---
+
+## 📚 Data Mata Kuliah
+
+Digunakan untuk mengelola seluruh mata kuliah yang tersedia.
+
+Informasi yang dikelola meliputi:
+
+- Kode Mata Kuliah
+- Nama Mata Kuliah
+- Jumlah SKS
+
+---
+
+## 🗓 Data Jadwal
+
+Digunakan untuk menyusun jadwal perkuliahan.
+
+Data yang diatur meliputi:
+
+- Mata Kuliah
+- Dosen Pengampu
+- Hari
+- Jam
+- Kelas
+
+---
+
+## 📝 Kartu Rencana Studi (KRS)
+
+Menu khusus mahasiswa untuk mengambil mata kuliah yang akan ditempuh pada semester berjalan.
+
+Fitur:
+
+- Memilih Mata Kuliah
+- Menghitung Total SKS
+- Melihat Riwayat Pengambilan Mata Kuliah
+- Cetak KRS ke PDF
+
+---
+
+# 📸 Dokumentasi Tampilan
+
+Tambahkan screenshot pada folder berikut.
+
+```
+screenshots/
+│
+├── landing-page.png
+├── login.png
+├── dashboard.png
+├── dosen.png
+├── mahasiswa.png
+├── mata-kuliah.png
+├── jadwal.png
+└── krs.png
+```
+
+---
+
+# 👨‍💻 Pengembang
+
+**Nama** : Muhammad Dzikri Abdul Muti
+
+**Program Studi** : Teknik Informatika
+
+**Universitas** : SURYAKENCANA
+
+---
+
+# 📄 Lisensi
+
+Project ini dibuat untuk keperluan pembelajaran dan penyelesaian Tugas Besar mata kuliah Pemrograman Web Lanjut.
+
+---
