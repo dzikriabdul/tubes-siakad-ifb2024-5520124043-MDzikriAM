@@ -83,20 +83,31 @@ Aplikasi dikembangkan menggunakan framework Laravel dengan konsep CRUD, autentik
 # ✨ Fitur Utama
 
 -Autentikasi dan otorisasi berbasis role (Admin & Mahasiswa) menggunakan Laravel Auth dan middleware.
+
 -CRUD lengkap untuk data Dosen, Mahasiswa, Mata Kuliah, dan Jadwal.
+
 -Perhitungan otomatis jam selesai kuliah berdasarkan jumlah SKS mata kuliah (1 SKS = 50 menit).
+
 -Filter jadwal kuliah sesuai kelas mahasiswa yang login.
+
 -Input dan drop mata kuliah (KRS) oleh mahasiswa, dengan validasi mata kuliah duplikat.
+
 -Admin dapat menghubungkan (assign) akun mahasiswa baru ke data mahasiswa melalui NPM.
+
 -Validasi Laravel pada seluruh form input.
+
 -Eloquent ORM dan relasi antar tabel (Dosen, Mahasiswa, Mata Kuliah, Jadwal, KRS).
 
-Fitur Tambahan (Bonus)
+# Fitur Tambahan (Bonus)
 
 -Export KRS mahasiswa ke PDF (menggunakan barryvdh/laravel-dompdf).
+
 -Dashboard statistik (total dosen, mahasiswa, mata kuliah, jadwal) untuk admin.
+
 -Tampilan responsif (sidebar overlay untuk mobile, tabel scroll horizontal).
+
 -Loading overlay saat proses pengiriman form.
+
 -Tampilan login dan register dengan toggle show/hide password.
 
 ---
