@@ -3,9 +3,9 @@
 ## 📌 Informasi Proyek
 
 **Nama Proyek** : Sistem Informasi Akademik (SIAKAD)  
-**Mata Kuliah** : Pemrograman Web Lanjut (PWL)  
+**Mata Kuliah** : Pemrograman Web II  
 **Program Studi** : Teknik Informatika  
-**Semester** : Genap 2025/2026
+**Semester** : 4 (2025/2026)
 
 ---
 
@@ -24,8 +24,6 @@ Aplikasi telah dioptimalkan agar dapat digunakan dengan nyaman pada berbagai uku
 ✔ Responsive Layout  
 ✔ Mobile Friendly  
 ✔ Tampilan Modern dan User Friendly
-
-✔ Jadwal mata kuliah sesuai kelas masing masing
 
 ---
 
@@ -82,20 +80,24 @@ Melalui aplikasi ini, admin dapat mengelola data dosen, mahasiswa, mata kuliah, 
 Aplikasi dikembangkan menggunakan framework Laravel dengan konsep CRUD, autentikasi multi-role, dan database relasional sehingga proses administrasi akademik menjadi lebih cepat, mudah, dan efisien.
 
 ---
-
 # ✨ Fitur Utama
 
-- Login Multi User
-- Dashboard
-- Manajemen Dosen
-- Manajemen Mahasiswa
-- Manajemen Mata Kuliah
-- Manajemen Jadwal Kuliah
-- Pengisian KRS
-- Perhitungan Total SKS
-- Cetak KRS PDF
-- Validasi Data
-- Responsive Design
+-Autentikasi dan otorisasi berbasis role (Admin & Mahasiswa) menggunakan Laravel Auth dan middleware.
+-CRUD lengkap untuk data Dosen, Mahasiswa, Mata Kuliah, dan Jadwal.
+-Perhitungan otomatis jam selesai kuliah berdasarkan jumlah SKS mata kuliah (1 SKS = 50 menit).
+-Filter jadwal kuliah sesuai kelas mahasiswa yang login.
+-Input dan drop mata kuliah (KRS) oleh mahasiswa, dengan validasi mata kuliah duplikat.
+-Admin dapat menghubungkan (assign) akun mahasiswa baru ke data mahasiswa melalui NPM.
+-Validasi Laravel pada seluruh form input.
+-Eloquent ORM dan relasi antar tabel (Dosen, Mahasiswa, Mata Kuliah, Jadwal, KRS).
+
+Fitur Tambahan (Bonus)
+
+-Export KRS mahasiswa ke PDF (menggunakan barryvdh/laravel-dompdf).
+-Dashboard statistik (total dosen, mahasiswa, mata kuliah, jadwal) untuk admin.
+-Tampilan responsif (sidebar overlay untuk mobile, tabel scroll horizontal).
+-Loading overlay saat proses pengiriman form.
+-Tampilan login dan register dengan toggle show/hide password.
 
 ---
 
@@ -136,6 +138,7 @@ Fitur:
 - Menambah mahasiswa
 - Mengedit data mahasiswa
 - Menghapus data mahasiswa
+- (admin) dapat menghubungkan akun yang belum tersambung
 
 ---
 
@@ -161,7 +164,6 @@ Data yang diatur meliputi:
 - Dosen Pengampu
 - Hari
 - Jam
-- Kelas
 
 ---
 
@@ -185,14 +187,17 @@ Tambahkan screenshot pada folder berikut.
 ```
 screenshots/
 │
-├── landing-page.png
-├── login.png
-├── dashboard.png
-├── dosen.png
-├── mahasiswa.png
-├── mata-kuliah.png
-├── jadwal.png
-└── krs.png
+├── Page-KrsMhs-admin.png
+├── Page-dashboard-admin.png
+├── Page-dashboard-mahasiswa.png
+├── Page-dosen-admin.png
+├── Page-jadwal-admin.png
+├── Page-jadwal-mahasiswa.png
+├── Page-krs-mahasiswa.png
+├── Page-mahasiswa-admin.png
+├── Page-matakuliah-admin.png
+├── form-login.png
+└── krs-pdf.png
 ```
 
 ---
@@ -203,7 +208,7 @@ screenshots/
 
 **Program Studi** : Teknik Informatika
 
-**Universitas** : SURYAKENCANA
+**Universitas** : SURYAKANCANA
 
 ---
 
